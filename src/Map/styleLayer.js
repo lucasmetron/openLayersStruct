@@ -23,12 +23,12 @@ const styles = {
       stroke: new Stroke({ color: "#00FF00", width: 2 }),
       fill: new Fill({color: '#d240ff80'})
     }),
-    citie_icon:new Style({
-      image: new Icon({
-        scale: 0.3,
-        src: require('enderecodaimagem.png'),
-      })
-    })
+    // citie_icon:new Style({
+    //   image: new Icon({
+    //     scale: 0.3,
+    //     // src: require('enderecodaimagem.png'),
+    //   })
+    // })
   };
 
   export default styles
