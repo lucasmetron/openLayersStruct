@@ -73,7 +73,7 @@ const Map = () => {
   vectorSourcer.addFeatures(feature_polygon)
 
   const startMap = () => {
-    new OlMap({
+    const olMap = new OlMap({
       target: "olmap",
       layers: [
         // aqui ficas as layers e a primeira layer é o proprio mapa
@@ -87,6 +87,11 @@ const Map = () => {
         zoom: 4.5,
       }),
     });
+
+    // a função abaixo serve para executar função de buscar dados dos pontos/linhas/poligonos, quando o mapa estiver carregado
+    // olMap.once('rendercomplete' , ()=>{
+    //   getData()
+    // })
   };
 
   useEffect(() => {

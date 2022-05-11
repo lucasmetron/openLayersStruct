@@ -1,4 +1,4 @@
-import { Circle as CircleStyle, Fill, Stroke, Style } from "ol/style";
+import { Circle as CircleStyle, Fill, Stroke, Style, Icon } from "ol/style";
 
 const styles = {
     danger: new Style({
@@ -23,6 +23,12 @@ const styles = {
       stroke: new Stroke({ color: "#00FF00", width: 2 }),
       fill: new Fill({color: '#d240ff80'})
     }),
+    citie_icon:new Style({
+      image: new Icon({
+        scale: 0.3,
+        src: require('enderecodaimagem.png'),
+      })
+    })
   };
 
   export default styles
